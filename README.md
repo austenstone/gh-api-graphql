@@ -13,7 +13,7 @@ Great introduction video on GraphQL.
 ## Explorer GraphiQL
 See [Using the Explorer](https://docs.github.com/en/graphql/guides/using-the-explorer).
 
-[![Watch the video](https://img.youtube.com/vi/7wzR4Ig5pTI/maxresdefault.jpg)](https://youtu.be/7wzR4Ig5pTI)
+[![Explorer](https://user-images.githubusercontent.com/22425467/156842494-b6410489-46ed-403f-9097-2d8b2b354d3c.png)](https://docs.github.com/en/graphql/overview/explorer)
 
 ## Octokit Graphql.js
 See [https://github.com/octokit/graphql.js/#graphqljs](https://github.com/octokit/graphql.js/#graphqljs).
