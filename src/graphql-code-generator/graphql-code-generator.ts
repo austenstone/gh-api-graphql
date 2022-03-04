@@ -15,6 +15,7 @@ const postsQueryDocument = gql`
 `
 
 
-const Posts = () => {
-  const { data } = useCustomFetchGraphQLData(postsQueryDocument);
-}
+const run = async (): Promise<void> => {
+};
+
+export default run;
