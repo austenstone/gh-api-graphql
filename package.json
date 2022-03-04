@@ -8,6 +8,7 @@
     "generate": "graphql-codegen --config codegen.yml",
     "lint": "eslint src/**/*.ts",
     "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
     "serve": "ts-node-dev --respawn --project tsconfig.json src/main.ts"
   },
   "repository": {
