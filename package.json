@@ -4,13 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cli": "ts-node src/cli.ts",
     "test": "jest",
     "generate": "graphql-codegen --config codegen.yml",
-    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint src/**/*.ts",
     "build": "tsc -p tsconfig.json",
-    "clean": "rm -rf dist build",
-    "ts-node": "ts-node"
+    "serve": "ts-node-dev --respawn --project tsconfig.json src/main.ts",
   },
   "repository": {
     "type": "git",
@@ -29,6 +27,8 @@
     "@graphql-codegen/typescript": "2.4.5",
     "@octokit/types": "^6.34.0",
     "@types/graphql": "^14.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
     "@vercel/ncc": "^0.33.3",
     "apollo": "^2.33.9",
     "esbuild": "^0.14.25",
