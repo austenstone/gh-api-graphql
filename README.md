@@ -1,7 +1,7 @@
 # GitHub GraphQL
 Demonstraing usage of GitHub GraphQL API.
 
-You will need to [create a PAT(Personal Access Token)](https://github.com/settings/tokens/new?scopes=repo) to use this API.
+You will need to [create a PAT(Personal Access Token)](https://github.com/settings/tokens/new?scopes=repo) to use most methods.
 
 ## What is GraphQL?
 Great introduction video on GraphQL.
