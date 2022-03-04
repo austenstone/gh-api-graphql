@@ -1,0 +1,45 @@
+{
+  "name": "gh-api-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cli": "ts-node src/cli.ts",
+    "test": "jest",
+    "generate": "graphql-codegen --config codegen.yml",
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist build",
+    "ts-node": "ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austenstone/gh-api-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austenstone/gh-api-graphql/issues"
+  },
+  "homepage": "https://github.com/austenstone/gh-api-graphql#readme",
+  "devDependencies": {
+    "@octokit/types": "^6.34.0",
+    "@types/graphql": "^14.5.0",
+    "@vercel/ncc": "^0.33.3",
+    "apollo": "^2.33.9",
+    "esbuild": "^0.14.25",
+    "eslint": "^8.10.0",
+    "ts-node-dev": "^1.1.8",
+    "@graphql-codegen/typescript": "2.4.5",
+    "@graphql-codegen/introspection": "2.1.1",
+    "@graphql-codegen/cli": "2.6.2"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typescript-operations": "^2.3.2",
+    "graphql": "^16.3.0",
+    "octokit": "^1.7.1"
+  }
+}
