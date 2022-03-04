@@ -18,7 +18,7 @@ See [Using the Explorer](https://docs.github.com/en/graphql/guides/using-the-exp
 ## Terminal
 
 ### GitHub CLI
-See [cli.github.com/manual/gh_api](https://cli.github.com/manual/gh_api#examples).
+See [github.com/cli/cli](https://github.com/cli/cli#github-cli) and [cli.github.com/manual](https://cli.github.com/manual/gh_api#examples).
 ```bash
 gh api graphql -f query='query {
   viewer {
@@ -58,7 +58,7 @@ export default run;
 ```
 
 ### graphql-request
-See [npmjs.com/package/graphql-request](https://www.npmjs.com/package/graphql-request)
+See [npmjs.com/package/graphql-request](https://www.npmjs.com/package/graphql-request).
 ```js
 import { request, gql } from 'graphql-request'
 
