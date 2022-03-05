@@ -67,6 +67,24 @@ const result = await octokit.graphql(`query {
 }`)
 console.log(result);
 ```
+### Bonus Action
+You can you [github-script](https://github.com/actions/github-script#run-custom-graphql-queries) to easily use octokit in your actions.
+```yaml
+jobs:
+  list-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            const query = `{ 
+                viewer { 
+                  login
+                }
+            }`;
+            const result = await github.graphql(query)
+            console.log(result)
+```
 
 ### graphql-request
 See [npmjs.com/package/graphql-request](https://www.npmjs.com/package/graphql-request).
