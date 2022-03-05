@@ -71,7 +71,7 @@ console.log(result);
 You can you [github-script](https://github.com/actions/github-script#run-custom-graphql-queries) to easily use octokit in your actions.
 ```yaml
 jobs:
-  list-issues:
+  viewer_login:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v6
