@@ -137,4 +137,7 @@ const runApolloClient = async (): Promise<void> => {
 };
 
 export default runApolloClient;
-```
+## Code Generation
+
+### Graphql Code Generator
+[graphql-code-generator]() has [plugins](https://www.graphql-code-generator.com/plugins) to generate code for most languages.
