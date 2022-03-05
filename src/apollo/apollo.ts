@@ -2,40 +2,38 @@ import {
     ApolloClient,
     InMemoryCache,
     gql,
-    ApolloLink
+    HttpLink
 } from "@apollo/client/core";
-import { createHttpLink, HttpLink } from "apollo-link-http";
+import { setContext } from '@apollo/link-context';
 import fetch from 'cross-fetch';
-import { setContext } from '@apollo/client/link/context';
 
 const runApolloClient = async (): Promise<void> => {
-    // Create the http link
-    const httpLink = createHttpLink({
+    const httpLink = new HttpLink({
         uri: 'https://api.github.com/graphql',
+        fetch
     });
 
     const authLink = setContext((_, { headers }) => {
         return {
             headers: {
                 ...headers,
-                authorization:  `Bearer ${process.env.GITHUB_TOKEN}`
+                authorization:  `bearer ${process.env.GITHUB_TOKEN}`
             }
         }
     });
 
     const client = new ApolloClient({
         cache: new InMemoryCache(),
-        link: authLink.concat(httpLink as any),
-        fetch: fetch
+        link: authLink.concat(httpLink)
     });
 
     client.query({
-        query: gql`query GetRates {
-            rates(currency: "USD") {
-                currency
+        query: gql`{ 
+            viewer { 
+              login
             }
         }`
-    }).then(result => console.log(result));
+    }).then(result => console.log(result.data));
 };
 
 export default runApolloClient;
