@@ -6,7 +6,7 @@ const runGraphQLRequest = async (): Promise<void> => {
           login
         }
     }`
-    
+
     request({
         url: 'https://api.github.com/graphql',
         document: query,

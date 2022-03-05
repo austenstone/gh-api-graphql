@@ -1,9 +1,4 @@
-import {
-    ApolloClient,
-    InMemoryCache,
-    gql,
-    HttpLink
-} from "@apollo/client/core";
+import { ApolloClient, InMemoryCache, gql, HttpLink } from "@apollo/client/core";
 import { setContext } from '@apollo/link-context';
 import fetch from 'cross-fetch';
 
@@ -17,7 +12,7 @@ const runApolloClient = async (): Promise<void> => {
         return {
             headers: {
                 ...headers,
-                authorization:  `bearer ${process.env.GITHUB_TOKEN}`
+                authorization: `bearer ${process.env.GITHUB_TOKEN}`
             }
         }
     });

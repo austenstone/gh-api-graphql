@@ -25,18 +25,12 @@
   "homepage": "https://github.com/austenstone/gh-api-graphql#readme",
   "devDependencies": {
     "@graphql-codegen/cli": "2.6.2",
-    "@graphql-codegen/introspection": "2.1.1",
-    "@graphql-codegen/typescript": "2.4.5",
     "@octokit/types": "^6.34.0",
     "@types/graphql": "^14.5.0",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
-    "@vercel/ncc": "^0.33.3",
-    "apollo": "^2.33.9",
-    "esbuild": "^0.14.25",
     "eslint": "^8.10.0",
     "graphql": "^16.3.0",
-    "node-fetch": "^3.2.1",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.0"
   },
@@ -47,12 +41,9 @@
     "@graphql-codegen/typescript-operations": "^2.3.2",
     "apollo-cache-inmemory": "^1.6.6",
     "apollo-client": "^2.6.10",
-    "apollo-link": "^1.2.1",
-    "apollo-link-http": "^1.5.17",
     "cross-fetch": "^3.1.5",
     "express": "^4.17.3",
     "graphql-tag": "^2.12.6",
-    "i": "^0.3.7",
     "npm": "^8.5.3",
     "octokit": "^1.7.1"
   }
