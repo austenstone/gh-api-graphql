@@ -136,6 +136,7 @@ const runApolloClient = async (): Promise<void> => {
 };
 
 export default runApolloClient;
+```
 
 ## Code Generation
 
