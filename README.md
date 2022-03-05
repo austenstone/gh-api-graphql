@@ -140,4 +140,4 @@ export default runApolloClient;
 ## Code Generation
 
 ### Graphql Code Generator
-[graphql-code-generator]() has [plugins](https://www.graphql-code-generator.com/plugins) to generate code for most languages.
+[graphql-code-generator](https://www.graphql-code-generator.com/) has [plugins](https://www.graphql-code-generator.com/plugins) to generate code for most languages.
