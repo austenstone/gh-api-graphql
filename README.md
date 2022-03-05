@@ -44,7 +44,7 @@ gh api graphql -f query='query {
 ### Curl
 You know curl.
 ```bash
-curl -H "Authorization: bearer token" -X POST -d " \
+curl -H "Authorization: bearer ${GITHUB_TOKEN}" -X POST -d " \
  { \
    \"query\": \"query { viewer { login }}\" \
  } \
