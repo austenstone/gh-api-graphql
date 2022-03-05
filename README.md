@@ -1,12 +1,26 @@
-# GitHub GraphQL
+# GitHub GraphQL API
 Demonstraing usage of GitHub GraphQL API.
 
 You will need to [create a PAT(Personal Access Token)](https://github.com/settings/tokens/new?scopes=repo) to use most methods.
 
 ## What is GraphQL?
-Great introduction video on GraphQL.
+GraphQL is a query language that traverses your data graph to produce a query result tree.
 
 [![Watch the video](https://img.youtube.com/vi/7wzR4Ig5pTI/maxresdefault.jpg)](https://youtu.be/7wzR4Ig5pTI)
+
+## What is the [GitHub GraphQL API](https://docs.github.com/en/graphql)?
+To create integrations, retrieve data, and automate your workflows, use the GitHub GraphQL API. The GitHub GraphQL API offers more precise and flexible queries than the GitHub REST API.
+
+# GitHub API Clients
+Below are of the clients that can be used to interact with the GitHub GraphQL API.
+
+The list is broken up into the following categories:
+- [GUI](#gui)
+- [Terminal](#terminal)
+- [JavaScript](#javascript)
+
+
+This list is not exahustive. You can find clients for any language at [graphql.org](https://graphql.org/code/).
 
 ## GUI
 
