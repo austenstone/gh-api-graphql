@@ -58,19 +58,31 @@ See [github.com/octokit/graphql.js](https://github.com/octokit/graphql.js/#graph
 ```js
 import { Octokit } from "octokit";
 
-const run = async (): Promise<void> => {
-  const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
-  const result = await octokit.graphql(`query { 
-      viewer { 
-        login
-      }
-  }`)
-
-  console.log(result);
-};
-
-export default run;
+const result = await octokit.graphql(`query { 
+    viewer { 
+      login
+    }
+}`)
+console.log(result)
+```
+#### Bonus Actions Usage
+You can use [github-script](https://github.com/actions/github-script#run-custom-graphql-queries) to easily implement octokit in your Actions workflows.
+```yaml
+jobs:
+  viewer_login:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            const result = await octokit.graphql(`query { 
+                viewer { 
+                  login
+                }
+            }`)
+            console.log(result)
 ```
 
 ### graphql-request
@@ -78,23 +90,17 @@ See [npmjs.com/package/graphql-request](https://www.npmjs.com/package/graphql-re
 ```js
 import { request, gql } from 'graphql-request'
 
-const runGraphQLRequest = async (): Promise<void> => {
-    const query = gql`{ 
+request({
+    url: 'https://api.github.com/graphql',
+    document: gql`{ 
         viewer { 
           login
         }
-    }`
-    
-    request({
-        url: 'https://api.github.com/graphql',
-        document: query,
-        requestHeaders: {
-            Authorization: `bearer ${process.env.GITHUB_TOKEN}`
-        }
-    }).then((data) => console.log(data))
-};
-
-export default runGraphQLRequest;
+    }`,
+    requestHeaders: {
+        Authorization: `bearer ${process.env.GITHUB_TOKEN}`
+    }
+}).then((data) => console.log(data))
 ```
 
 ### Apollo
@@ -106,36 +112,32 @@ import { ApolloClient, InMemoryCache, gql, HttpLink } from "@apollo/client/core"
 import { setContext } from '@apollo/link-context';
 import fetch from 'cross-fetch';
 
-const runApolloClient = async (): Promise<void> => {
-    const httpLink = new HttpLink({
-        uri: 'https://api.github.com/graphql',
-        fetch
-    });
+const httpLink = new HttpLink({
+    uri: 'https://api.github.com/graphql',
+    fetch
+});
 
-    const authLink = setContext((_, { headers }) => {
-        return {
-            headers: {
-                ...headers,
-                authorization: `bearer ${process.env.GITHUB_TOKEN}`
-            }
+const authLink = setContext((_, { headers }) => {
+    return {
+        headers: {
+            ...headers,
+            authorization: `bearer ${process.env.GITHUB_TOKEN}`
         }
-    });
+    }
+});
 
-    const client = new ApolloClient({
-        cache: new InMemoryCache(),
-        link: authLink.concat(httpLink)
-    });
+const client = new ApolloClient({
+    cache: new InMemoryCache(),
+    link: authLink.concat(httpLink)
+});
 
-    client.query({
-        query: gql`{ 
-            viewer { 
-              login
-            }
-        }`
-    }).then(result => console.log(result.data));
-};
-
-export default runApolloClient;
+client.query({
+    query: gql`{ 
+        viewer { 
+          login
+        }
+    }`
+}).then(result => console.log(result.data));
 ```
 
 ## Code Generation
