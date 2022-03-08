@@ -47,12 +47,15 @@ Use the [GraphiQL Explorer](https://docs.github.com/en/graphql/overview/explorer
 Read more on [Using the Explorer](https://docs.github.com/en/graphql/guides/using-the-explorer).
 
 <a href="https://docs.github.com/en/graphql/overview/explorer">
-  <img style="max-width: 700px" src="https://user-images.githubusercontent.com/22425467/156842494-b6410489-46ed-403f-9097-2d8b2b354d3c.png">
+  <img width="400px" src="https://user-images.githubusercontent.com/22425467/156842494-b6410489-46ed-403f-9097-2d8b2b354d3c.png">
 </a>
 
 ### GraphQL Playground
-[graphql-playground](https://github.com/graphql/graphql-playground)
+[graphql-playground](https://github.com/graphql/graphql-playground) was [deprecated](https://graphql.org/blog/2020-04-03-web-based-graphql-ides-for-the-win/) in favor of web-based IDEs like GraphiQL. Still a great tool.
 
+<a href="https://github.com/graphql/graphql-playground">
+  <img width="400px" src="https://user-images.githubusercontent.com/22425467/157260489-bae642ce-2b4d-4c5c-946b-a1efde501124.png">
+</a>
 
 ## Terminal
 
