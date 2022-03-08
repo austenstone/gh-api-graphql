@@ -17,7 +17,16 @@ Read [Introduction to GraphQL](https://docs.github.com/en/graphql/guides/introdu
 ## What is the GitHub GraphQL API?
 To create integrations, retrieve data, and automate your workflows, use the [GitHub GraphQL API](https://docs.github.com/en/graphql).<br>The GitHub GraphQL API offers more precise and flexible queries than the GitHub REST API.
 
-[GitHub GraphQL Query Samples](https://github.com/github/platform-samples/tree/master/graphql)
+### Endpoint
+
+There is only one endpoint for the GitHub GraphQL API.
+```
+https://api.github.com/graphql
+```
+All requests to this endpoint must contain an authorization header.
+```
+Authorization: Bearer ghp_PAT_HERE
+```
 
 # GitHub API Clients
 Below are of the clients that can be used to interact with the GitHub GraphQL API.
@@ -27,7 +36,9 @@ The list is broken up into the following categories:
 - [Terminal](#terminal)
 - [JavaScript](#javascript)
 
-This list is not exahustive. You can find clients for any language at [graphql.org](https://graphql.org/code/).
+This list is not exhaustive. You can find clients for any language at [graphql.org](https://graphql.org/code/).
+
+See [GitHub GraphQL Query Samples](https://github.com/github/platform-samples/tree/master/graphql) for query samples.
 
 ## GUI
 
@@ -37,6 +48,10 @@ See [Using the Explorer](https://docs.github.com/en/graphql/guides/using-the-exp
 <a href="https://docs.github.com/en/graphql/overview/explorer">
   <img style="max-width: 700px" src="https://user-images.githubusercontent.com/22425467/156842494-b6410489-46ed-403f-9097-2d8b2b354d3c.png">
 </a>
+
+### GraphQL Playground
+[graphql-playground](https://github.com/graphql/graphql-playground)
+
 
 ## Terminal
 
