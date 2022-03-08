@@ -50,6 +50,13 @@ Read more on [Using the Explorer](https://docs.github.com/en/graphql/guides/usin
   <img width="400px" src="https://user-images.githubusercontent.com/22425467/156842494-b6410489-46ed-403f-9097-2d8b2b354d3c.png">
 </a>
 
+### Insomnia
+[Insomnia](https://insomnia.rest/) is an all purpose API Client and has a great GraphQL interface.
+
+<a href="https://insomnia.rest/">
+  <img width="400px" src="https://user-images.githubusercontent.com/22425467/157262174-63278a74-a9ea-45d1-800b-0da8210b4fb3.png">
+</a>
+
 ### GraphQL Playground
 [graphql-playground](https://github.com/graphql/graphql-playground) was [deprecated](https://graphql.org/blog/2020-04-03-web-based-graphql-ides-for-the-win/) in favor of web-based IDEs like GraphiQL. Still a great tool.
 
