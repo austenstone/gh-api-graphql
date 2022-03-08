@@ -38,7 +38,9 @@ The list is broken up into the following categories:
 
 This list is not exhaustive. You can find clients for any language at [graphql.org](https://graphql.org/code/).
 
-See [GitHub GraphQL Query Samples](https://github.com/github/platform-samples/tree/master/graphql) for query samples.
+For sample queries see [GitHub GraphQL Query Samples](https://github.com/github/platform-samples/tree/master/graphql).
+
+You must provide a special `Accept` header to utilize upcoming features and changes. See [Schema previews](https://docs.github.com/en/graphql/overview/schema-previews).
 
 ## GUI
 
