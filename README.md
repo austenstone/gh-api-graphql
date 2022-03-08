@@ -33,7 +33,9 @@ This list is not exahustive. You can find clients for any language at [graphql.o
 ### Explorer GraphiQL
 See [Using the Explorer](https://docs.github.com/en/graphql/guides/using-the-explorer).
 
-[![Explorer](https://user-images.githubusercontent.com/22425467/156842494-b6410489-46ed-403f-9097-2d8b2b354d3c.png)](https://docs.github.com/en/graphql/overview/explorer)
+<a href="https://docs.github.com/en/graphql/overview/explorer">
+  <img style="max-width: 700px" src="https://user-images.githubusercontent.com/22425467/156842494-b6410489-46ed-403f-9097-2d8b2b354d3c.png">
+</a>
 
 ## Terminal
 
