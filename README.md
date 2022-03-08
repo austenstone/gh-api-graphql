@@ -43,7 +43,8 @@ See [GitHub GraphQL Query Samples](https://github.com/github/platform-samples/tr
 ## GUI
 
 ### Explorer GraphiQL
-See [Using the Explorer](https://docs.github.com/en/graphql/guides/using-the-explorer).
+Use the [GraphiQL Explorer](https://docs.github.com/en/graphql/overview/explorer) built into GitHub's documentation or use the official [Online GraphiQL](https://graphiql-online.com/).
+Read more on [Using the Explorer](https://docs.github.com/en/graphql/guides/using-the-explorer).
 
 <a href="https://docs.github.com/en/graphql/overview/explorer">
   <img style="max-width: 700px" src="https://user-images.githubusercontent.com/22425467/156842494-b6410489-46ed-403f-9097-2d8b2b354d3c.png">
