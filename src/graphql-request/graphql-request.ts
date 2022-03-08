@@ -2,10 +2,10 @@ import { request, gql } from 'graphql-request'
 
 const runGraphQLRequest = async (): Promise<void> => {
   const query = gql`{ 
-        viewer { 
-            login
-        }
-    }`
+    viewer { 
+      login
+    }
+  }`
 
   request({
     url: 'https://api.github.com/graphql',
