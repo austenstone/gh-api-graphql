@@ -17,6 +17,8 @@ Read [Introduction to GraphQL](https://docs.github.com/en/graphql/guides/introdu
 ## What is the GitHub GraphQL API?
 To create integrations, retrieve data, and automate your workflows, use the [GitHub GraphQL API](https://docs.github.com/en/graphql).<br>The GitHub GraphQL API offers more precise and flexible queries than the GitHub REST API.
 
+[Sample Queries](https://github.com/github/platform-samples/tree/master/graphql)
+
 # GitHub API Clients
 Below are of the clients that can be used to interact with the GitHub GraphQL API.
 
@@ -24,7 +26,6 @@ The list is broken up into the following categories:
 - [GUI](#gui)
 - [Terminal](#terminal)
 - [JavaScript](#javascript)
-
 
 This list is not exahustive. You can find clients for any language at [graphql.org](https://graphql.org/code/).
 
