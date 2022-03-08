@@ -23,11 +23,11 @@ const runApolloClient = async (): Promise<void> => {
   })
 
   client.query({
-    query: gql`{ 
-            viewer { 
-              login
-            }
-        }`,
+    query: gql`{
+        viewer { 
+          login
+        }
+    }`,
   }).then((result) => console.log(result.data))
 }
 
