@@ -7,7 +7,7 @@ You will need to [create a PAT(Personal Access Token)](https://github.com/settin
 ## What is GraphQL?
 GraphQL is a query language that traverses your data graph to produce a query result tree.
 
-Here's a great video on GraphQL Basics:<br>
+See [GraphQL Basics - Build an app with the SpaceX API](https://youtu.be/7wzR4Ig5pTI)<br>
 <a href="https://youtu.be/7wzR4Ig5pTI">
   <img src="https://img.youtube.com/vi/7wzR4Ig5pTI/maxresdefault.jpg" width="300px">
 </a>
@@ -167,3 +167,10 @@ client.query({
 
 ### Graphql Code Generator
 [graphql-code-generator](https://www.graphql-code-generator.com/) has [plugins](https://www.graphql-code-generator.com/plugins) to generate code for most languages.
+
+# Want to learn more?
+
+See [Advanced patterns for GitHub's GraphQL API](https://youtu.be/i5pIszu9MeM)<br>
+<a href="https://youtu.be/i5pIszu9MeM">
+  <img src="https://img.youtube.com/vi/i5pIszu9MeM/maxresdefault.jpg" width="300px">
+</a>
