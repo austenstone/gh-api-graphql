@@ -1,6 +1,6 @@
 import { Octokit } from "octokit";
 
-const run = async (): Promise<void> => {
+const runOctoKit = async (): Promise<void> => {
   const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
   const result = await octokit.graphql(`query { 
@@ -12,4 +12,4 @@ const run = async (): Promise<void> => {
   console.log(result);
 };
 
-export default run;
+export default runOctoKit;
