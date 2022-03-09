@@ -45,7 +45,7 @@ You must provide a special `Accept` header to utilize upcoming features and chan
 ## GUI
 
 ### Explorer GraphiQL
-Use the [GraphiQL Explorer](https://docs.github.com/en/graphql/overview/explorer) built into GitHub's documentation or use the official [Online GraphiQL](https://graphiql-online.com/).<br>
+Use the [GraphiQL Explorer](https://docs.github.com/en/graphql/overview/explorer) built into GitHub's documentation or use the official [Online GraphiQL](https://graphiql-online.com/). Be patient with the explorer, it can take a little bit to load the schema.<br>
 Read more on [Using the Explorer](https://docs.github.com/en/graphql/guides/using-the-explorer).
 
 <a href="https://docs.github.com/en/graphql/overview/explorer">
